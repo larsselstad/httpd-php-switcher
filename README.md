@@ -1,32 +1,35 @@
-<h1>Switch between php modules in your httpd.conf</h1>
+# Switch between php modules in your httpd.conf
 
-<p>A simple script that lets you change witch php*_module to be used by commenting out the other in a httpd.conf file. I use this for easy local development with PHP on my Mac.</p>
+A simple script that lets you change witch php*_module to be used by commenting out the other in a httpd.conf file. I use this for easy local development with PHP on my Mac.
 
-<h2>Usage</h2>
+## Usage
 
 ```
 $ httpd-php-switcher [path-to-httpd.conf] [version-number-of-php]
 ```
 
-<h3>The httpd.conf looks like:</h3>
+### The httpd.conf looks like:
+
 ```
 LoadModule php5_module libexec/apache2/libphp5.so
 #LoadModule php7_module /usr/local/php7/libphp7.so
 ```
 
-<h3>Then you run:</h3>
+### Then you run:
+
 ```
 $ httpd-php-switcher /etc/apache2/httpd.conf 7
 ```
 
-<h3>The httpd.conf now looks like:</h3>
+### The httpd.conf now looks like:
+
 ```
 #LoadModule php5_module libexec/apache2/libphp5.so
 LoadModule php7_module /usr/local/php7/libphp7.so
 ```
 
-<p>Use the code in test.php (<?php phpinfo(); ?>) to see php version.</p>
+Use the code in test.php (<?php phpinfo(); ?>) to see php version.
 
-<p>Inspired by this post: <a href="https://getgrav.org/blog/macos-sierra-apache-multiple-php-versions">https://getgrav.org/blog/macos-sierra-apache-multiple-php-versions</a></p>
+Inspired by this post: [macOS 10.12 Sierra Apache Setup: Multiple PHP Versions](https://getgrav.org/blog/macos-sierra-apache-multiple-php-versions)
 
-<p>Download php from: <a href="https://php-osx.liip.ch">https://php-osx.liip.ch</a></p>
+Download php from: [https://php-osx.liip.ch](https://php-osx.liip.ch)
