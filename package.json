@@ -11,8 +11,16 @@
     "conf"
   ],
   "bin": {
-      "httpd-php-switcher": "./index.js"
+    "httpd-php-switcher": "./index.js"
   },
   "author": "Lars Selstad",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larsselstad/httpd-php-switcher.git"
+  },
+  "bugs": {
+    "url": "https://github.com/larsselstad/httpd-php-switcher/issues"
+  },
+  "homepage": "https://github.com/larsselstad/httpd-php-switcher#readme"
 }
