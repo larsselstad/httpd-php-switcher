@@ -1,6 +1,6 @@
 {
   "name": "httpd-php-switcher",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Changes your httpd.conf to use phpX instead of phpY",
   "main": "index.js",
   "keywords": [
