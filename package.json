@@ -1,0 +1,18 @@
+{
+  "name": "httpd-php-switcher",
+  "version": "1.0.0",
+  "description": "Changes your httpd.conf to use phpX instead of phpY",
+  "main": "index.js",
+  "keywords": [
+    "apache",
+    "httpd",
+    "php",
+    "version",
+    "conf"
+  ],
+  "bin": {
+      "httpd-php-switcher": "./index.js"
+  },
+  "author": "Lars Selstad",
+  "license": "ISC"
+}
